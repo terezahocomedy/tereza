@@ -33,6 +33,13 @@
         
         /* Adds a little breathing room between the logo and your text */
         .button i { margin-right: 8px; }
+        
+        /* Flashing animation for Save Contact button */
+        @keyframes flash {
+            0%, 100% { background:#1b4d1b; }
+            50% { background:#2d7a2d; }
+        }
+        .button-flash { animation: flash 1.5s infinite; }
     </style>
 </head>
 <body>
@@ -50,13 +57,13 @@
     </div>
 
     <!-- Emojis replaced with official logos -->
-    <a class="button" href="Tereza.vcf"><i class="fa-solid fa-address-card"></i> Save Contact</a>
+    <a class="button button-flash" href="Tereza.vcf"><i class="fa-solid fa-address-card"></i> Save Contact</a>
+
+    <a class="button" href="https://wa.me/85298460499"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
 
     <a class="button" href="https://instagram.com/terezahocomedy"><i class="fa-brands fa-instagram"></i> Instagram</a>
 
     <a class="button" href="https://www.linkedin.com/in/terezaho"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-
-    <a class="button" href="https://wa.me/YOUR_WHATSAPP_NUMBER"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
 
     <div class="quote">"Turning experience into stories, technology into possibilities."</div>
 
